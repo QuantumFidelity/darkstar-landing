@@ -1,0 +1,10 @@
+# dependencies
+node_modules/
+.env
+dist/
+.vite/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
