@@ -1,8 +1,6 @@
 import EnhancedStars from './EnhancedStars';
 import AccretionDisk from './AccretionDisk';
 import BlackHoleDistortion from './BlackHoleDistortion';
-import Nebula from './Nebula';
-import NebulaFBM from './NebulaFBM';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { useRef } from 'react';
@@ -30,11 +28,9 @@ function GalaxyCanvas() {
     <Canvas camera={{ position: [0, 0, 5], fov: 75 }} style={{ height: '100vh', width: '100vw' }}>
       <ambientLight intensity={0.2} />
       <pointLight position={[10, 10, 10]} />
-      <NebulaFBM radius={200} />
       <EnhancedStars />
-      <EnhancedStars color="#a0c8ff" count={2000} factor={2} radius={200} depth={100} speed={0.5} />
-      <AccretionDisk />
-      <BlackHoleDistortion />
+      {/* <AccretionDisk /> */}
+      {/* <BlackHoleDistortion /> */}
       <BlackHole />
       <OrbitControls enableZoom={true} zoomSpeed={0.8} />
     </Canvas>

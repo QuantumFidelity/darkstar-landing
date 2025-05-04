@@ -2,7 +2,7 @@ import GalaxyCanvas from './components/GalaxyCanvas';
 
 function App() {
   return (
-    <div>
+    <div className="fullscreen">
       <GalaxyCanvas />
     </div>
   );
